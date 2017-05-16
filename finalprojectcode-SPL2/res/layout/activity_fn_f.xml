@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FnFActivity" >
+
+    <TextView
+        android:id="@+id/textViewforfnf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Numbers for FNF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewforfnf"
+        android:text="Click to Select Numbers" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignLeft="@+id/okbutton"
+        android:layout_below="@+id/okbutton" >
+    </ListView>
+
+    <Button
+        android:id="@+id/SendMsgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listView2"
+        android:text="Send SMS" />
+
+    <TextView
+        android:id="@+id/ctextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SendMsgButton"
+        android:layout_alignBottom="@+id/SendMsgButton"
+        android:layout_alignLeft="@+id/listView2"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/helpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/listView2"
+        android:layout_alignRight="@+id/listView2"
+        android:text="HELP" />
+
+</RelativeLayout>
